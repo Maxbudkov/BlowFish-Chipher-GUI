@@ -713,7 +713,7 @@ namespace BlowFishCS
         }
 
         //преобразует шестнадцатеричную строку в массив байтов
-        private byte[] HexToByte(string hex)
+        public byte[] HexToByte(string hex)
         {
             byte[] r = new byte[hex.Length / 2];
             for (int i = 0; i < hex.Length - 1; i += 2)
@@ -726,7 +726,7 @@ namespace BlowFishCS
         }
 
         //преобразует один шестнадцатеричный символ в его десятичное значение
-        private byte GetHex(char x)
+        public byte GetHex(char x)
         {
             if (x <= '9' && x >= '0')
             {
